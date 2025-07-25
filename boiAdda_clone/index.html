@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boiadda clone</title>
+    <!-- ========== tailwind cdn link ========== -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- ========== Start font awesome link Section ========== -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ========== End font awesome link Section ========== -->
+  </head>
+
+  <body>
+    <!-- ========== Start header Section ========== -->
+    <header>
+      <div
+        class="bg-[url('https://bponi.sgp1.cdn.digitaloceanspaces.com/bponi/file/quykov1jj0hdkgu.webp')] bg-cover bg-center"
+      >
+        <div class="container flex flex-col">
+          <div
+            class="flex max-[1023px]:grid max-[1023px]:grid-cols-2 gap-[2rem] items-center p-[2rem]"
+          >
+            <div class="w-[16rem]">
+              <a href="">
+                <img
+                  src="https://bponi.sgp1.cdn.digitaloceanspaces.com/bponi/file/9f37eb35-21b9-4154-b999-c1644a628b44.png"
+                  alt=""
+                  width="100%"
+                />
+              </a>
+            </div>
+            <div class="flex justify-between w-full">
+              <div
+                class="relative flex items-center w-full max-[1150px]:w-[90%] max-[1050px]:w-[80%] max-[1023px]:hidden rounded-[.5rem]"
+              >
+                <input
+                  type="search"
+                  name="search"
+                  id="search"
+                  placeholder="বই অথবা লেখকের নাম দিয়ে অনুসন্ধান করুন"
+                  class="w-[100%] text-[1.17rem] outline-none p-[1.3rem] font-[400]"
+                />
+                <i
+                  class="fa-solid fa-magnifying-glass absolute right-0 bg-[#86b642] text-[2rem] text-white py-[1.18rem] px-[2rem] font-[600]"
+                ></i>
+              </div>
+              <div
+                class="flex justify-between max-[1023px]:justify-end items-center gap-[1rem] w-[30%] max-[1023px]:w-full"
+              >
+                <div class="flex">
+                  <div class="pl-[2rem]">
+                    <a href=""
+                      ><i class="fa-regular fa-heart text-[2rem] text-white"></i
+                    ></a>
+                  </div>
+                  <div class="pl-[1.5rem] max-[400px]:pl-[1rem]">
+                    <a href=""
+                      ><i
+                        class="fa-solid fa-cart-shopping text-[2rem] text-white"
+                      ></i
+                    ></a>
+                  </div>
+                  <div
+                    class="hidden max-[1023px]:block pl-[1.5rem] max-[400px]:pl-[1rem]"
+                  >
+                    <a href=""
+                      ><i class="fa-regular fa-user text-[2rem] text-white"></i
+                    ></a>
+                  </div>
+                  <div
+                    class="hidden max-[1023px]:block pl-[1.5rem] max-[400px]:pl-[1rem]"
+                  >
+                    <a href=""
+                      ><i class="fa-solid fa-bars text-[2rem] text-white"></i
+                    ></a>
+                  </div>
+                </div>
+                <div
+                  class="flex text-[1.3rem] text-white font-[550] max-[1023px]:hidden"
+                >
+                  <a href="" class="hover:underline pr-[.8rem]">লগইন</a>
+                  <span>/</span>
+                  <a href="" class="hover:underline pl-[.8rem]">রেজিস্টার</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="hidden max-[1023px]:block grid grid-items-center px-[2.4rem] pb-[1.5rem]"
+          >
+            <div class="relative flex items-center rounded-[.5rem]">
+              <input
+                type="search"
+                name="search"
+                id="search"
+                placeholder="বই অথবা লেখকের নাম দিয়ে অনুসন্ধান করুন"
+                class="w-[100%] text-[1.17rem] outline-none p-[1.3rem] font-[400]"
+              />
+              <i
+                class="fa-solid fa-magnifying-glass absolute right-0 bg-[#86b642] text-[2rem] text-white py-[1.18rem] px-[2rem] font-[600]"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ========== Start Nav Section ========== -->
+    </header>
+    <!-- ========== End header Section ========== -->
+    <!-- ========== Start nav Section ========== -->
+    <nav class="bg-[#86bc42] max-[1023px]:hidden">
+      <div
+        class="container flex justify-between items-center text-[1.5rem] text-white px-[2rem]"
+      >
+        <ul class="flex justify-between gap-[2.5rem] p-[1rem] text-[1.5rem]">
+          <li class="cursor-pointer">
+            <a href="">হোম </a>
+          </li>
+          <li class="relative group cursor-pointer">
+            <a href="">ক্যাটাগরি </a>
+            <ul class="absolute hidden group-hover:block z-[100]">
+              <li>lkjhfcvbndfgdfghhmnbvcxzsdzfxghviui</li>
+            </ul>
+          </li>
+          <li class="cursor-pointer">
+            <a href="">লেখক </a>
+          </li>
+          <li class="cursor-pointer">
+            <a href="">অর্ডার দেখুন</a>
+          </li>
+        </ul>
+        <div class="flex justify-center items-center text-[1.5rem] font-[500]">
+          <i class="fa-solid fa-phone p-[1rem]"></i>
+          <span class="">হট লাইন: 8801714819822</span>
+        </div>
+      </div>
+    </nav>
+    <!-- ========== End nav Section ========== -->
+  </body>
+</html>
