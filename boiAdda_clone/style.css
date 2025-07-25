@@ -32,6 +32,9 @@ li {
 .grid-four-cols {
   grid-template-columns: repeat(4, 1fr);
 }
+.grid-three-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
 .container {
   max-width: 127rem !important;
   margin: 0 auto !important;
