@@ -40,3 +40,8 @@ li {
   margin: 0 auto !important;
   /* padding: 2.4rem 0; */
 }
+.cart-container {
+  max-width: 100rem !important;
+  margin: 0 auto !important;
+  /* padding: 2.4rem 0; */
+}

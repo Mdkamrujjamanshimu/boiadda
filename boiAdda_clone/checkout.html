@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-     <!-- ========== tailwind cdn link ========== -->
+    <!-- ========== tailwind cdn link ========== -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <link rel="stylesheet" href="style.css" />
@@ -18,8 +18,8 @@
       referrerpolicy="no-referrer"
     />
     <!-- ========== End font awesome link Section ========== -->
-</head>
-<body>
+  </head>
+  <body>
     <!-- ========== Start header Section ========== -->
     <header class="fixed-top">
       <div
@@ -147,7 +147,136 @@
       <!-- ========== End nav Section ========== -->
     </header>
     <!-- ========== End header Section ========== -->
-    <main class="my-[10rem] container">order</main>
+
+    <!-- ========== Start Main Section ========== -->
+    <main class="px-[2rem] pt-[2rem] pb-[10rem] cart-container">
+      <div
+        class="flex justify-between items-center text-[1.7rem] max-[400px]:text-[1.3rem] font-semibold mb-[3rem]"
+      >
+        <p>শপিং ব্যাগ (3 আইটেম)</p>
+        <p>মোট ৳1,568</p>
+      </div>
+
+      <div class="flex max-[1023px]:grid gap-[3rem]">
+        <div class="w-[65%] max-[1023px]:w-full flex flex-col gap-[1rem]">
+          <div class="relative pt-[2rem]">
+            <span
+              class="absolute top-[1.2rem] left-[1rem] text-[1.4rem] text-[#111827] bg-white px-[.5rem]"
+              >ফোন নম্বর</span
+            >
+            <div class="border-[.1rem] p-[1rem] rounded-[.5rem] text-[1.5rem]">
+              <input
+                type="text"
+                name=""
+                id=""
+                placeholder="Enter Phone"
+                class="w-full mt-[1rem] outline-none"
+              />
+            </div>
+          </div>
+          <div class="relative pt-[2rem]">
+            <span
+              class="absolute top-[1.2rem] left-[1rem] text-[1.4rem] text-[#111827] bg-white px-[.5rem]"
+              >নাম</span
+            >
+            <div class="border-[.1rem] p-[1rem] rounded-[.5rem] text-[1.5rem]">
+              <input
+                type="text"
+                name=""
+                id=""
+                placeholder="Enter Name"
+                class="w-full mt-[1rem] outline-none"
+              />
+            </div>
+          </div>
+          <div class="relative pt-[2rem]">
+            <span
+              class="absolute top-[1.2rem] left-[1rem] text-[1.4rem] text-[#111827] bg-white px-[.5rem]"
+              >ঠিকানা</span
+            >
+            <div class="border-[.1rem] p-[1rem] rounded-[.5rem] text-[1.5rem]">
+              <textarea
+                name=""
+                id=""
+                placeholder="Enter Address"
+                class="w-full outline-none"
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="mt-[2rem]">
+            <h2 class="text-[1.5rem] py-[1rem]">এরিয়া সিলেক্ট করুন</h2>
+            <div
+              class="flex gap-[1rem] border-[.1rem] p-[1rem] rounded-[.5rem] mb-[2rem]"
+            >
+              <input type="radio" name="" id="" />
+              <div class="">
+                <h3 class="text-[1.4rem] font-bold">
+                  ঢাকা সিটির বাহিরে ১০০/- টাকা
+                </h3>
+                <span class="text-[1.2rem]">ডেলিভারি চার্জ ৳100</span>
+              </div>
+            </div>
+            <div
+              class="flex gap-[1rem] border-[.1rem] p-[1rem] rounded-[.5rem] mb-[2rem]"
+            >
+              <input type="radio" name="" id="" />
+              <div class="">
+                <h3 class="text-[1.4rem] font-bold">
+                  ঢাকা সিটির ভিতরে ৬০/- টাকা
+                </h3>
+                <span class="text-[1.2rem]">ডেলিভারি চার্জ ৳60</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-[35%] max-[1023px]:w-full mt-[2rem]">
+          <div class="border-[.1rem] p-[1rem] rounded-[.5rem]">
+            <div
+              class="flex justify-between items-center text-[1.5rem] max-[400px]:text-[1.3rem] mb-[1rem]"
+            >
+              <span>মোট</span>
+              <div class="flex gap-[1rem]">
+                <span class="text-[#6B7280]"><del>৳2,100</del></span>
+                <span>৳1,568</span>
+              </div>
+            </div>
+            <div
+              class="flex justify-between items-center text-[1.5rem] max-[400px]:text-[1.3rem] mb-[1rem]"
+            >
+              <span>ডেলিভারি চার্জ</span>
+              <span class="text-[#17B31B]">৳100</span>
+            </div>
+            <div
+              class="flex justify-between items-center text-[1.3rem] gap-[1rem] mb-[1rem] text-[#6B7280]"
+            >
+              <span>ডেলিভারি এরিয়া</span>
+              <span>ঢাকা সিটির বাহিরে ১০০/- টাকা</span>
+            </div>
+            <hr class="mb-[1rem]" />
+            <span class="text-[#6B7280] text-[1.3rem]"
+              >এভারেজ ডেলিভারি টাইম: ---</span
+            >
+            <div class="flex gap-[1rem]">
+              <button
+                class="bg-[#D1D5DB] w-full text-black text-[1.7rem] py-[1rem] mt-[6rem] rounded-l-[.5rem]"
+              >
+                <a href="#">পিছনে যান</a>
+              </button>
+
+              <button
+                class="bg-[#86BC42] w-full text-white text-[1.7rem] py-[1rem] mt-[6rem] rounded-r-[.5rem]"
+              >
+                <a href="#">এগিয়ে যান</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- ========== End Main Section ========== -->
+
     <!-- ========== Start Footer Section ========== -->
     <footer>
       <div
@@ -229,7 +358,7 @@
           </div>
         </div>
       </div>
-      <hr>
+      <hr />
       <div class="text-center bg-[#86bc42] py-[2rem] text-white text-[1.4rem]">
         <span>@2025 Boiadda.com -বই আড্ডা সমস্ত অধিকার সংরক্ষিত</span>
       </div>

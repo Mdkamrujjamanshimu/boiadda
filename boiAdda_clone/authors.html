@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- ========== tailwind cdn link ========== -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- ========== Start font awesome link Section ========== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- ========== End font awesome link Section ========== -->
+</head>
+
+<body>
+  <!-- ========== Start header Section ========== -->
+  <header class="fixed-top">
+    <div
+      class="bg-[url('https://bponi.sgp1.cdn.digitaloceanspaces.com/bponi/file/quykov1jj0hdkgu.webp')] bg-cover bg-center">
+      <div class="container flex flex-col">
+        <div class="flex max-[1023px]:grid max-[1023px]:grid-cols-2 gap-[2rem] items-center p-[2rem]">
+          <div class="w-[16rem]">
+            <a href="/">
+              <img
+                src="https://bponi.sgp1.cdn.digitaloceanspaces.com/bponi/file/9f37eb35-21b9-4154-b999-c1644a628b44.png"
+                alt="" width="100%" />
+            </a>
+          </div>
+          <div class="flex justify-between w-full">
+            <div
+              class="relative flex items-center w-full max-[1150px]:w-[90%] max-[1050px]:w-[80%] max-[1023px]:hidden rounded-[.5rem]">
+              <input type="search" name="search" id="search" placeholder="বই অথবা লেখকের নাম দিয়ে অনুসন্ধান করুন"
+                class="w-[100%] text-[1.17rem] outline-none p-[1.3rem] font-[400]" />
+              <i
+                class="fa-solid fa-magnifying-glass absolute right-0 bg-[#86b642] text-[2rem] text-white py-[1.18rem] px-[2rem] font-[600]"></i>
+            </div>
+            <div
+              class="flex justify-between max-[1023px]:justify-end items-center gap-[1rem] w-[30%] max-[1023px]:w-full">
+              <div class="flex">
+                <div class="pl-[2rem]">
+                  <a href=""><i class="fa-regular fa-heart text-[2rem] text-white"></i></a>
+                </div>
+                <div class="pl-[1.5rem] max-[400px]:pl-[1rem]">
+                  <a href=""><i class="fa-solid fa-cart-shopping text-[2rem] text-white"></i></a>
+                </div>
+                <div class="hidden max-[1023px]:block pl-[1.5rem] max-[400px]:pl-[1rem]">
+                  <a href=""><i class="fa-regular fa-user text-[2rem] text-white"></i></a>
+                </div>
+                <div class="hidden max-[1023px]:block pl-[1.5rem] max-[400px]:pl-[1rem]">
+                  <a href=""><i class="fa-solid fa-bars text-[2rem] text-white"></i></a>
+                </div>
+              </div>
+              <div class="flex text-[1.3rem] text-white font-[550] max-[1023px]:hidden">
+                <a href="" class="hover:underline pr-[.8rem]">লগইন</a>
+                <span>/</span>
+                <a href="" class="hover:underline pl-[.8rem]">রেজিস্টার</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hidden max-[1023px]:block grid grid-items-center px-[2.4rem] pb-[1.5rem]">
+          <div class="relative flex items-center rounded-[.5rem]">
+            <input type="search" name="search" id="search" placeholder="বই অথবা লেখকের নাম দিয়ে অনুসন্ধান করুন"
+              class="w-[100%] text-[1.17rem] outline-none p-[1.3rem] font-[400]" />
+            <i
+              class="fa-solid fa-magnifying-glass absolute right-0 bg-[#86b642] text-[2rem] text-white py-[1.18rem] px-[2rem] font-[600]"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ========== Start Nav Section ========== -->
+
+    <!-- ========== Start nav Section ========== -->
+    <nav class="bg-[#86bc42] max-[1023px]:hidden">
+      <div class="container flex justify-between items-center text-[1.5rem] text-white px-[2rem]">
+        <ul class="flex justify-between gap-[2.5rem] p-[1rem] text-[1.5rem]">
+          <li class="cursor-pointer">
+            <a href="/">হোম </a>
+          </li>
+          <li class="relative group cursor-pointer">
+            <a href="categories.html">ক্যাটাগরি </a>
+            <!-- <ul class="absolute hidden group-hover:block z-[100]">
+              <li>lkjhfcvbndfgdfghhmnbvcxzsdzfxghviui</li>
+            </ul> -->
+          </li>
+          <li class="cursor-pointer">
+            <a href="authors.html">লেখক </a>
+          </li>
+          <li class="cursor-pointer">
+            <a href="seeorder.html">অর্ডার দেখুন</a>
+          </li>
+        </ul>
+        <div class="flex justify-center items-center text-[1.5rem] font-[500]">
+          <i class="fa-solid fa-phone p-[1rem]"></i>
+          <span class="">হট লাইন: 8801714819822</span>
+        </div>
+      </div>
+    </nav>
+    <!-- ========== End nav Section ========== -->
+  </header>
+  <!-- ========== End header Section ========== -->
+
+  <!-- ========== Start Main Section ========== -->
+  <main class="py-[5rem] container p-[2rem]">
+    <div class="text-[#1F2937]">
+      <h2 class="text-center text-[2.5rem] font-[900] my-2rem">লেখকগণ</h2>
+      <div class="grid grid-four-cols max-[767px]:grid-cols-2 gap-[2rem]">
+        <div class="bg-[#E5E7EB] text-center text-[1.5rem] py-[3rem] shadow-lg">
+          <a href="/authors/adhapak-mofijur-rahman.html">অধ্যাপক মফিজুর রহমান</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- ========== Start Main Section ========== -->
+
+  <!-- ========== Start Footer Section ========== -->
+  <footer>
+    <div
+      class="bg-[url('https://bponi.sgp1.cdn.digitaloceanspaces.com/bponi/file/quykov1jj0hdkgu.webp')] bg-cover bg-center">
+      <div class="container grid grid-five-cols max-[1023px]:grid-cols-2 gap-[3rem] p-[2rem] text-white">
+        <div class="flex flex-col text-[1.3rem]">
+          <a href="">
+            <img src="https://bponi.sgp1.cdn.digitaloceanspaces.com/bponi/file/9f37eb35-21b9-4154-b999-c1644a628b44.png"
+              alt="" class="w-[80%] max-[1023px]:w-[50%]" />
+          </a>
+          <span class="py-[2rem]">বই আড্ডা.কম দিচ্ছে ঘরে বসে যে কোন বই কেনার সুযোগ। হাতে পেয়ে
+            মূল্য পরিশোধ করুন বইয়ের আড্ডা জমুক বই আড্ডা.কম এ</span>
+          <div class="flex gap-[2rem] text-[2rem] max-[370px]:gap-[1rem]">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+        </div>
+        <div>
+          <span class="text-[1.8rem] font-[550]">জনপ্রিয় ক্যাটাগরি</span>
+          <ul class="flex flex-col text-[1.3rem] pt-[1rem] gap-[1rem]">
+            <li><a href="">আত্মউন্নয়ন মোটিভেশন</a></li>
+            <li><a href="">হালাল -হারাম</a></li>
+            <li><a href="">বাংলাদেশের রাজনৈতিক</a></li>
+            <li><a href="">ব্যবসা ও অর্থনীতি</a></li>
+            <li><a href="">ইতিহাস</a></li>
+          </ul>
+        </div>
+        <div>
+          <span class="text-[1.8rem] font-[550]">নীতিমালা</span>
+          <ul class="flex flex-col text-[1.3rem] pt-[1rem] gap-[1rem]">
+            <li>
+              <a href=""> পরিষেবার শর্তাবলী</a>
+            </li>
+            <li>
+              <a href=""> ফেরত নীতিমালা</a>
+            </li>
+            <li>
+              <a href=""> গোপনীয়তা নীতিমালা </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <span class="text-[1.8rem] font-[550]">তথ্য</span>
+          <ul class="flex flex-col text-[1.3rem] pt-[1rem] gap-[1rem]">
+            <li>
+              <a href=""> আমাদের সম্পর্কে </a>
+            </li>
+            <li>
+              <a href=""> যোগাযোগ করুন</a>
+            </li>
+            <li>
+              <a href=""> অর্ডার ট্র্যাকিং</a>
+            </li>
+          </ul>
+        </div>
+        <div class="max-[500px]:col-span-2">
+          <span class="text-[1.8rem] font-[550]">যোগাযোগ</span>
+          <ul class="flex flex-col text-[1.5rem] pt-[1rem] gap-[1rem]">
+            <li>
+              <a href="">+8801737114925</a>
+            </li>
+            <li>
+              <a href="">kamrujjamanshimu@gmail.com</a>
+            </li>
+            <li>
+              <a href="">Dharirampur, Trishal, Mymensingh</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="text-center bg-[#86bc42] py-[2rem] text-white text-[1.4rem]">
+      <span>@2025 Boiadda.com -বই আড্ডা সমস্ত অধিকার সংরক্ষিত</span>
+    </div>
+  </footer>
+  <!-- ========== End Footer Section ========== -->
+</body>
+
+</html>

@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- ========== tailwind cdn link ========== -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- ========== Start font awesome link Section ========== -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ========== End font awesome link Section ========== -->
+  </head>
+
+  <body>
+    <!-- ========== Start header Section ========== -->
+    <header class="fixed-top">
+      <div
+        class="bg-[url('https://bponi.sgp1.cdn.digitaloceanspaces.com/bponi/file/quykov1jj0hdkgu.webp')] bg-cover bg-center"
+      >
+        <div class="container flex flex-col">
+          <div
+            class="flex max-[1023px]:grid max-[1023px]:grid-cols-2 gap-[2rem] items-center p-[2rem]"
+          >
+            <div class="w-[16rem]">
+              <a href="/">
+                <img
+                  src="https://bponi.sgp1.cdn.digitaloceanspaces.com/bponi/file/9f37eb35-21b9-4154-b999-c1644a628b44.png"
+                  alt=""
+                  width="100%"
+                />
+              </a>
+            </div>
+            <div class="flex justify-between w-full">
+              <div
+                class="relative flex items-center w-full max-[1150px]:w-[90%] max-[1050px]:w-[80%] max-[1023px]:hidden rounded-[.5rem]"
+              >
+                <input
+                  type="search"
+                  name="search"
+                  id="search"
+                  placeholder="বই অথবা লেখকের নাম দিয়ে অনুসন্ধান করুন"
+                  class="w-[100%] text-[1.17rem] outline-none p-[1.3rem] font-[400]"
+                />
+                <i
+                  class="fa-solid fa-magnifying-glass absolute right-0 bg-[#86b642] text-[2rem] text-white py-[1.18rem] px-[2rem] font-[600]"
+                ></i>
+              </div>
+              <div
+                class="flex justify-between max-[1023px]:justify-end items-center gap-[1rem] w-[30%] max-[1023px]:w-full"
+              >
+                <div class="flex">
+                  <div class="pl-[2rem]">
+                    <a href=""
+                      ><i class="fa-regular fa-heart text-[2rem] text-white"></i
+                    ></a>
+                  </div>
+                  <div class="pl-[1.5rem] max-[400px]:pl-[1rem]">
+                    <a href=""
+                      ><i
+                        class="fa-solid fa-cart-shopping text-[2rem] text-white"
+                      ></i
+                    ></a>
+                  </div>
+                  <div
+                    class="hidden max-[1023px]:block pl-[1.5rem] max-[400px]:pl-[1rem]"
+                  >
+                    <a href=""
+                      ><i class="fa-regular fa-user text-[2rem] text-white"></i
+                    ></a>
+                  </div>
+                  <div
+                    class="hidden max-[1023px]:block pl-[1.5rem] max-[400px]:pl-[1rem]"
+                  >
+                    <a href=""
+                      ><i class="fa-solid fa-bars text-[2rem] text-white"></i
+                    ></a>
+                  </div>
+                </div>
+                <div
+                  class="flex text-[1.3rem] text-white font-[550] max-[1023px]:hidden"
+                >
+                  <a href="" class="hover:underline pr-[.8rem]">লগইন</a>
+                  <span>/</span>
+                  <a href="" class="hover:underline pl-[.8rem]">রেজিস্টার</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="hidden max-[1023px]:block grid grid-items-center px-[2.4rem] pb-[1.5rem]"
+          >
+            <div class="relative flex items-center rounded-[.5rem]">
+              <input
+                type="search"
+                name="search"
+                id="search"
+                placeholder="বই অথবা লেখকের নাম দিয়ে অনুসন্ধান করুন"
+                class="w-[100%] text-[1.17rem] outline-none p-[1.3rem] font-[400]"
+              />
+              <i
+                class="fa-solid fa-magnifying-glass absolute right-0 bg-[#86b642] text-[2rem] text-white py-[1.18rem] px-[2rem] font-[600]"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ========== Start Nav Section ========== -->
+
+      <!-- ========== Start nav Section ========== -->
+      <nav class="bg-[#86bc42] max-[1023px]:hidden">
+        <div
+          class="container flex justify-between items-center text-[1.5rem] text-white px-[2rem]"
+        >
+          <ul class="flex justify-between gap-[2.5rem] p-[1rem] text-[1.5rem]">
+            <li class="cursor-pointer">
+              <a href="/">হোম </a>
+            </li>
+            <li class="relative group cursor-pointer">
+              <a href="categories.html">ক্যাটাগরি </a>
+              <!-- <ul class="absolute hidden group-hover:block z-[100]">
+              <li>lkjhfcvbndfgdfghhmnbvcxzsdzfxghviui</li>
+            </ul> -->
+            </li>
+            <li class="cursor-pointer">
+              <a href="authors.html">লেখক </a>
+            </li>
+            <li class="cursor-pointer">
+              <a href="seeorder.html">অর্ডার দেখুন</a>
+            </li>
+          </ul>
+          <div
+            class="flex justify-center items-center text-[1.5rem] font-[500]"
+          >
+            <i class="fa-solid fa-phone p-[1rem]"></i>
+            <span class="">হট লাইন: 8801714819822</span>
+          </div>
+        </div>
+      </nav>
+      <!-- ========== End nav Section ========== -->
+    </header>
+    <!-- ========== End header Section ========== -->
+
+    <!-- ========== Start Main Section ========== -->
+    <main class="p-[2rem] container">
+      <div class="grid grid-three-cols max-[767px]:grid-cols-1 gap-[2rem]">
+        <div class="">
+          <img
+            src="https://bponi.sgp1.cdn.digitaloceanspaces.com/bponi/store/11ec57ad-0f84-4ade-941a-4cad1cebc766.jpg"
+            alt=""
+            class="rounded-[.5rem] w-full"
+          />
+        </div>
+        <div class="">
+          <h2 class="text-[2.2rem] text-[#1F2937] font-medium">
+            মাওলানা নিজামী বেস্টসেলার ২টি বই
+          </h2>
+          <div class="">
+            <div
+              class="text-[1.5rem] my-[2rem] flex flex-col gap-[1rem] border-l-[.3rem] border-[#e8483c] p-[1rem]"
+            >
+              <div class="">
+                <span class="text-[#1F2937]">বিষয় :</span>
+                <span class="text-[#86b642]">
+                  <a href="/cattegory/new-publish-book.html">
+                    নতুন প্রকাশিত বই
+                  </a>
+                  |
+                  <a href="/cattegory/human-rights.html">হিউম্যান রাইটস</a>
+                </span>
+              </div>
+              <div class="">
+                <span class="text-[#1F2937]">অনুবাদক :</span>
+                <span class="text-[#86b642]">রোকন উদ্দিন খান</span>
+              </div>
+              <div class="">
+                <span class="text-[#1F2937]">প্রকাশনী :</span>
+                <span class="text-[#86b642]">প্রচ্ছদ প্রকাশন</span>
+              </div>
+              <div class="">
+                <span class="text-[#1F2937]">বিষয় :</span>
+                <span class="text-[#86b642]">হিউম্যান রাইটস</span>
+              </div>
+              <div class="">
+                <span class="text-[#1F2937]">পৃষ্ঠা :</span>
+                <span class="text-[#86b642]">272</span>
+              </div>
+              <div class="">
+                <span class="text-[#1F2937]">কভার :</span>
+                <span class="text-[#86b642]">হার্ড কভার</span>
+              </div>
+              <div class="">
+                <span class="text-[#1F2937]">সংস্করণ :</span>
+                <span class="text-[#86b642]">1st editon, 2025</span>
+              </div>
+            </div>
+            <div class="flex items-end gap-[1rem]">
+              <h3 class="text-[2.2rem] text-[#86b642] font-bold">৳370</h3>
+              <div class="flex text-[1.5rem] gap-[1rem]">
+                <span class="text-[#9CA3AF]"><del>৳500</del></span>
+                <span class="text-[#86b642]">(26.0% ছাড়ে)</span>
+              </div>
+            </div>
+            <div class="flex flex-col gap-[1rem]">
+              <h3 class="text-[#4B5563] text-[1.7rem] font-bold mt-[2rem]">
+                কী ঘটেছিল ২০২৪ সালের জুলাই আগস্টে?
+              </h3>
+              <span class="text-[#4B5563] text-[1.4rem]"
+                >ফ্যাসিস্ট সরকারের মানবাধিকার লঙ্ঘনের ভয়াবহতা কতখানি তীব্র ছিল?
+                কত মানুষ প্রাণ হারিয়েছে? কত মানুষ হয়েছে পঙ্গু? কোন কোন মন্......
+              </span>
+              <span class="text-[#86b642] text-[1.4rem] cursor-pointer"
+                >...আরও পড়ুন</span
+              >
+            </div>
+            <div class="grid grid-cols-2 gap-[1rem] my-[2rem]">
+              <div class="">
+                <a
+                  href="/cart.html"
+                  class="bg-[#0034FF] flex justify-center items-center py-[2rem] text-[1.5rem] text-white rounded-[.5rem]"
+                >
+                  <button class="flex items-center gap-[.5rem]">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>অর্ডার করুন</span>
+                  </button>
+                </a>
+              </div>
+              <div class="">
+                <a
+                  href="#"
+                  class="bg-[#E5E7EB] flex justify-center items-center py-[2rem] text-[1.5rem] text-black rounded-[.5rem]"
+                >
+                  <button class="flex items-center gap-[.5rem]">
+                    <i class="fa-regular fa-circle-check text-[#22C55E]"></i>
+                    <span>আরও কিনুন (1) </span>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="text-[#6B7280] text-[1.4rem]">
+              <div class="flex items-center gap-[1rem] mb-[1rem]">
+                <i class="fa-regular fa-heart"></i>
+                <span>পছন্দের তালিকায় যুক্ত করুন</span>
+              </div>
+              <div class="flex items-center gap-[1rem] mb-[1rem]">
+                <i class="fa-solid fa-share-nodes"></i>
+                <span>শেয়ার করুন:</span>
+                <div class="flex items-center gap-[1rem] text-[2rem]">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-span-2 p-[2rem] hidden max-[767px]:block max-[767px]:col-span-1"
+        >
+          <div class="flex gap-[1rem] text-[2rem] text-[#FACC15] mb-[1rem]">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div class="border-[.1rem] p-[1rem] rounded-[.5rem]">
+            <input
+              class="w-full outline-none text-[1.5rem] pb-[4rem]"
+              type="text"
+              name=""
+              id=""
+              placeholder="Add your comment..."
+            />
+            <button
+              class="bg-[#86BC42] text-[#fff] text-[1.5rem] px-[2rem] py-[1rem] rounded-[.5rem]"
+            >
+              Post
+            </button>
+          </div>
+        </div>
+        <div class="">
+          <div class="text-center">
+            <h3 class="text-[1.5rem] font-bold">সম্প্রতি দেখেছেন</h3>
+            <div class="flex gap-[1rem] w-full">
+              <div class="bg-[#0034FF] p-[.2rem] rounded-full w-[40%]"></div>
+              <div class="bg-[#0034FF] p-[.2rem] rounded-full w-[20%]"></div>
+              <div class="bg-[#0034FF] p-[.2rem] rounded-full w-[40%]"></div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-[1rem] mt-[2rem]">
+            <div
+              class="flex gap-[1rem] border-[.1rem] p-[.5rem] rounded-[.5rem]"
+            >
+              <div class="">
+                <img
+                  src="https://bponi.sgp1.cdn.digitaloceanspaces.com/bponi/store/d8f952ff-9fca-4685-99b2-19707307c74f.jpg"
+                  alt=""
+                  class="w-[9rem] h-[10rem]"
+                />
+              </div>
+              <div class="">
+                <p class="text-[1.3rem] mb-[1rem]">
+                  মাওলানা নিজামী বেস্টসেলার ২টি বই
+                </p>
+                <div class="flex items-center gap-[1rem]">
+                  <h4 class="text-[1.5rem] font-bold">৳425</h4>
+                  <p class="text-[1.3rem] font-medium text-[ #6B7280]">
+                    <del>৳535</del>
+                  </p>
+                  <p class="text-[1.3rem] font-medium text-[#EE741F]">
+                    (20.6%)
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex gap-[1rem] border-[.1rem] p-[.5rem] rounded-[.5rem]"
+            >
+              <div class="">
+                <img
+                  src="https://bponi.sgp1.cdn.digitaloceanspaces.com/bponi/store/91534bf2-9a9f-416e-8754-be316610857f.jpg"
+                  alt=""
+                  class="w-[9rem] h-[10rem]"
+                />
+              </div>
+              <div class="">
+                <p class="text-[1.3rem] mb-[1rem]">
+                  বাংলাদেশে ২০২৪ সালের জুলাই-আগস্ট আন্দোলনে সংঘটিত মানবাধিকার
+                  লঙ্ঘন ও নিপীড়ন
+                </p>
+                <div class="flex items-center gap-[1rem]">
+                  <h4 class="text-[1.5rem] font-bold">৳370</h4>
+                  <p class="text-[1.3rem] font-medium text-[ #6B7280]">
+                    <del>৳500</del>
+                  </p>
+                  <p class="text-[1.3rem] font-medium text-[#EE741F]">
+                    (26.0%)
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex gap-[1rem] border-[.1rem] p-[.5rem] rounded-[.5rem]"
+            >
+              <div class="">
+                <img
+                  src="https://bponi.sgp1.cdn.digitaloceanspaces.com/bponi/store/cf8c1d9f-06cc-47f0-8cf0-b15bea92ad93.jpg"
+                  alt=""
+                  class="w-[9rem] h-[10rem]"
+                />
+              </div>
+              <div class="">
+                <p class="text-[1.3rem] mb-[1rem]">এই ২টি বই একেকটি দলিল</p>
+                <div class="flex items-center gap-[1rem]">
+                  <h4 class="text-[1.5rem] font-bold">৳599</h4>
+                  <p class="text-[1.3rem] font-medium text-[ #6B7280]">
+                    <del>৳800</del>
+                  </p>
+                  <p class="text-[1.3rem] font-medium text-[#EE741F]">
+                    (25.1%)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-span-2 p-[2rem] max-[767px]:hidden max-[767px]:col-span-1"
+        >
+          <div class="flex gap-[1rem] text-[2rem] text-[#FACC15] mb-[1rem]">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div class="border-[.1rem] p-[1rem] rounded-[.5rem]">
+            <input
+              class="w-full outline-none text-[1.5rem] pb-[4rem]"
+              type="text"
+              name=""
+              id=""
+              placeholder="Add your comment..."
+            />
+            <button
+              class="bg-[#86BC42] text-[#fff] text-[1.5rem] px-[2rem] py-[1rem] rounded-[.5rem]"
+            >
+              Post
+            </button>
+          </div>
+        </div>
+      </div>
+      <section class="relative pt-[3rem]">
+        <span
+          class="absolute top-[1.7rem] left-[2rem] z-50 text-[#86bc42] text-[2rem] bg-white"
+          ><a href="">▪️ আরো দেখুন </a></span
+        >
+        <!-- <div class="flex flex-col justify-center items-center text-center"></div> -->
+        <div
+          class="border-[.2rem] border-[#7DB13D] border-dashed rounded-[1rem]"
+        >
+          <div
+            class="grid grid-five-cols max-[1023px]:grid-cols-4 max-[767px]:grid-cols-3 max-[639px]:grid-cols-2 gap-[2rem] m-[2rem]"
+          >
+            <a href="product-details.html">
+              <div
+                class="border-[.1rem] border-[#c3c9d6] p-[.5rem] rounded-[.5rem]"
+              >
+                <div class="relative rounded-[.5rem]">
+                  <img
+                    src="https://bponi.sgp1.cdn.digitaloceanspaces.com/bponi/store/a020e1e5-1ef2-4f75-b5e9-b46dc63eb025.jpg"
+                    alt=""
+                    class="rounded-[.5rem]"
+                  />
+                  <!-- <span class="absolute text-white top-0 -left-[0] bg-black">25% ছাড় </span> -->
+                </div>
+                <div class="pt-[2rem] text-[1.4rem]">
+                  <div class="text-black text-center whitespace-nowrap">
+                    <span>এই ২টি বই একেকটি দলিল</span>
+                  </div>
+                  <div
+                    class="flex justify-center gap-[1rem] font-[600] mt-[3rem] text-[1.8rem] max-[400px]:text-[1.5rem]"
+                  >
+                    <span class="text-[#7DB13D]">৳599</span>
+                    <span class="text-[#5E605C]"><del>৳800</del></span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="product-details.html">
+              <div
+                class="border-[.1rem] border-[#c3c9d6] p-[.5rem] rounded-[.5rem]"
+              >
+                <div class="relative rounded-[.5rem]">
+                  <img
+                    src="https://bponi.sgp1.cdn.digitaloceanspaces.com/bponi/store/9bbe80c2-fdcf-452a-800c-e10001ef249e.jpg"
+                    alt=""
+                    class="rounded-[.5rem]"
+                  />
+                  <!-- <span class="absolute text-white top-0 -left-[0] bg-black">25% ছাড় </span> -->
+                </div>
+                <div class="pt-[2rem] text-[1.4rem]">
+                  <div class="text-black text-center whitespace-nowrap">
+                    <span>এই ২টি বই একেকটি দলিল</span>
+                  </div>
+                  <div
+                    class="flex justify-center gap-[1rem] font-[600] mt-[3rem] text-[1.8rem] max-[400px]:text-[1.5rem]"
+                  >
+                    <span class="text-[#7DB13D]">৳599</span>
+                    <span class="text-[#5E605C]"><del>৳800</del></span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="product-details.html">
+              <div
+                class="border-[.1rem] border-[#c3c9d6] p-[.5rem] rounded-[.5rem]"
+              >
+                <div class="relative rounded-[.5rem]">
+                  <img
+                    src="https://bponi.sgp1.cdn.digitaloceanspaces.com/bponi/store/ecf2b3cb-c423-4ddc-a667-6de9e6785792.jpg"
+                    alt=""
+                    class="rounded-[.5rem]"
+                  />
+                  <!-- <span class="absolute text-white top-0 -left-[0] bg-black">25% ছাড় </span> -->
+                </div>
+                <div class="pt-[2rem] text-[1.4rem]">
+                  <div class="text-black text-center whitespace-nowrap">
+                    <span class=""
+                      >বাংলাদেশে ২০২৪ সালের জুলাই-আগস্ট আন্দোলনে সংঘটিত
+                      মানবাধিকার লঙ্ঘন ও নিপীড়ন</span
+                    >
+                  </div>
+                  <div
+                    class="flex justify-center gap-[1rem] font-[600] mt-[3rem] text-[1.8rem] max-[400px]:text-[1.5rem]"
+                  >
+                    <span class="text-[#7DB13D]">৳370</span>
+                    <span class="text-[#5E605C]"><del>৳500</del></span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="product-details.html">
+              <div
+                class="border-[.1rem] border-[#c3c9d6] p-[.5rem] rounded-[.5rem]"
+              >
+                <div class="relative rounded-[.5rem]">
+                  <img
+                    src="https://bponi.sgp1.cdn.digitaloceanspaces.com/bponi/store/11ec57ad-0f84-4ade-941a-4cad1cebc766.jpg"
+                    alt=""
+                    class="rounded-[.5rem]"
+                  />
+                  <!-- <span class="absolute text-white top-0 -left-[0] bg-black">25% ছাড় </span> -->
+                </div>
+                <div class="pt-[2rem] text-[1.4rem]">
+                  <div class="text-black text-center whitespace-nowrap">
+                    <span>মাওলানা নিজামী বেস্টসেলার ২টি বই</span>
+                  </div>
+                  <div
+                    class="flex justify-center gap-[1rem] font-[600] mt-[3rem] text-[1.8rem] max-[400px]:text-[1.5rem]"
+                  >
+                    <span class="text-[#7DB13D]">৳425</span>
+                    <span class="text-[#5E605C]"><del>৳535</del></span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="product-details.html">
+              <div
+                class="border-[.1rem] border-[#c3c9d6] p-[.5rem] rounded-[.5rem]"
+              >
+                <div class="relative rounded-[.5rem]">
+                  <img
+                    src="https://bponi.sgp1.cdn.digitaloceanspaces.com/bponi/store/f9003e5a-fba9-4637-9d06-7bb062e142f0.jpg"
+                    alt=""
+                    class="rounded-[.5rem]"
+                  />
+                  <!-- <span class="absolute text-white top-0 -left-[0] bg-black">25% ছাড় </span> -->
+                </div>
+                <div class="pt-[2rem] text-[1.4rem]">
+                  <div class="text-black text-center whitespace-nowrap">
+                    <span>ছয় মহীয়সী নারীর জীবনী</span>
+                  </div>
+                  <div
+                    class="flex justify-center gap-[1rem] font-[600] mt-[3rem] text-[1.8rem] max-[400px]:text-[1.5rem]"
+                  >
+                    <span class="text-[#7DB13D]">৳650</span>
+                    <span class="text-[#5E605C]"><del>৳2,280</del></span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="product-details.html">
+              <div
+                class="border-[.1rem] border-[#c3c9d6] p-[.5rem] rounded-[.5rem]"
+              >
+                <div class="relative rounded-[.5rem]">
+                  <img
+                    src="https://bponi.sgp1.cdn.digitaloceanspaces.com/bponi/store/a020e1e5-1ef2-4f75-b5e9-b46dc63eb025.jpg"
+                    alt=""
+                    class="rounded-[.5rem]"
+                  />
+                  <!-- <span class="absolute text-white top-0 -left-[0] bg-black">25% ছাড় </span> -->
+                </div>
+                <div class="pt-[2rem] text-[1.4rem]">
+                  <div class="text-black text-center whitespace-nowrap">
+                    <span>এই ২টি বই একেকটি দলিল</span>
+                  </div>
+                  <div
+                    class="flex justify-center gap-[1rem] font-[600] mt-[3rem] text-[1.8rem] max-[400px]:text-[1.5rem]"
+                  >
+                    <span class="text-[#7DB13D]">৳599</span>
+                    <span class="text-[#5E605C]"><del>৳800</del></span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="product-details.html">
+              <div
+                class="border-[.1rem] border-[#c3c9d6] p-[.5rem] rounded-[.5rem]"
+              >
+                <div class="relative rounded-[.5rem]">
+                  <img
+                    src="https://bponi.sgp1.cdn.digitaloceanspaces.com/bponi/store/9bbe80c2-fdcf-452a-800c-e10001ef249e.jpg"
+                    alt=""
+                    class="rounded-[.5rem]"
+                  />
+                  <!-- <span class="absolute text-white top-0 -left-[0] bg-black">25% ছাড় </span> -->
+                </div>
+                <div class="pt-[2rem] text-[1.4rem]">
+                  <div class="text-black text-center whitespace-nowrap">
+                    <span>এই ২টি বই একেকটি দলিল</span>
+                  </div>
+                  <div
+                    class="flex justify-center gap-[1rem] font-[600] mt-[3rem] text-[1.8rem] max-[400px]:text-[1.5rem]"
+                  >
+                    <span class="text-[#7DB13D]">৳599</span>
+                    <span class="text-[#5E605C]"><del>৳800</del></span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="product-details.html">
+              <div
+                class="border-[.1rem] border-[#c3c9d6] p-[.5rem] rounded-[.5rem]"
+              >
+                <div class="relative rounded-[.5rem]">
+                  <img
+                    src="https://bponi.sgp1.cdn.digitaloceanspaces.com/bponi/store/ecf2b3cb-c423-4ddc-a667-6de9e6785792.jpg"
+                    alt=""
+                    class="rounded-[.5rem]"
+                  />
+                  <!-- <span class="absolute text-white top-0 -left-[0] bg-black">25% ছাড় </span> -->
+                </div>
+                <div class="pt-[2rem] text-[1.4rem]">
+                  <div class="text-black text-center whitespace-nowrap">
+                    <span class=""
+                      >বাংলাদেশে ২০২৪ সালের জুলাই-আগস্ট আন্দোলনে সংঘটিত
+                      মানবাধিকার লঙ্ঘন ও নিপীড়ন</span
+                    >
+                  </div>
+                  <div
+                    class="flex justify-center gap-[1rem] font-[600] mt-[3rem] text-[1.8rem] max-[400px]:text-[1.5rem]"
+                  >
+                    <span class="text-[#7DB13D]">৳370</span>
+                    <span class="text-[#5E605C]"><del>৳500</del></span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="product-details.html">
+              <div
+                class="border-[.1rem] border-[#c3c9d6] p-[.5rem] rounded-[.5rem]"
+              >
+                <div class="relative rounded-[.5rem]">
+                  <img
+                    src="https://bponi.sgp1.cdn.digitaloceanspaces.com/bponi/store/11ec57ad-0f84-4ade-941a-4cad1cebc766.jpg"
+                    alt=""
+                    class="rounded-[.5rem]"
+                  />
+                  <!-- <span class="absolute text-white top-0 -left-[0] bg-black">25% ছাড় </span> -->
+                </div>
+                <div class="pt-[2rem] text-[1.4rem]">
+                  <div class="text-black text-center whitespace-nowrap">
+                    <span>মাওলানা নিজামী বেস্টসেলার ২টি বই</span>
+                  </div>
+                  <div
+                    class="flex justify-center gap-[1rem] font-[600] mt-[3rem] text-[1.8rem] max-[400px]:text-[1.5rem]"
+                  >
+                    <span class="text-[#7DB13D]">৳425</span>
+                    <span class="text-[#5E605C]"><del>৳535</del></span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="product-details.html">
+              <div
+                class="border-[.1rem] border-[#c3c9d6] p-[.5rem] rounded-[.5rem]"
+              >
+                <div class="relative rounded-[.5rem]">
+                  <img
+                    src="https://bponi.sgp1.cdn.digitaloceanspaces.com/bponi/store/f9003e5a-fba9-4637-9d06-7bb062e142f0.jpg"
+                    alt=""
+                    class="rounded-[.5rem]"
+                  />
+                  <!-- <span class="absolute text-white top-0 -left-[0] bg-black">25% ছাড় </span> -->
+                </div>
+                <div class="pt-[2rem] text-[1.4rem]">
+                  <div class="text-black text-center whitespace-nowrap">
+                    <span>ছয় মহীয়সী নারীর জীবনী</span>
+                  </div>
+                  <div
+                    class="flex justify-center gap-[1rem] font-[600] mt-[3rem] text-[1.8rem] max-[400px]:text-[1.5rem]"
+                  >
+                    <span class="text-[#7DB13D]">৳650</span>
+                    <span class="text-[#5E605C]"><del>৳2,280</del></span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="text-center my-[4rem]">
+            <button
+              class="bg-[#86BC42] text-[1.5rem] text-white py-[1rem] px-[4rem] rounded-[.5rem]"
+            >
+              আরও দেখুন
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ========== End Main Section ========== -->
+
+    <!-- ========== Start Footer Section ========== -->
+    <footer>
+      <div
+        class="bg-[url('https://bponi.sgp1.cdn.digitaloceanspaces.com/bponi/file/quykov1jj0hdkgu.webp')] bg-cover bg-center"
+      >
+        <div
+          class="container grid grid-five-cols max-[1023px]:grid-cols-2 gap-[3rem] p-[2rem] text-white"
+        >
+          <div class="flex flex-col text-[1.3rem]">
+            <a href="">
+              <img
+                src="https://bponi.sgp1.cdn.digitaloceanspaces.com/bponi/file/9f37eb35-21b9-4154-b999-c1644a628b44.png"
+                alt=""
+                class="w-[80%] max-[1023px]:w-[50%]"
+              />
+            </a>
+            <span class="py-[2rem]"
+              >বই আড্ডা.কম দিচ্ছে ঘরে বসে যে কোন বই কেনার সুযোগ। হাতে পেয়ে
+              মূল্য পরিশোধ করুন বইয়ের আড্ডা জমুক বই আড্ডা.কম এ</span
+            >
+            <div class="flex gap-[2rem] text-[2rem] max-[370px]:gap-[1rem]">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+          </div>
+          <div>
+            <span class="text-[1.8rem] font-[550]">জনপ্রিয় ক্যাটাগরি</span>
+            <ul class="flex flex-col text-[1.3rem] pt-[1rem] gap-[1rem]">
+              <li><a href="">আত্মউন্নয়ন মোটিভেশন</a></li>
+              <li><a href="">হালাল -হারাম</a></li>
+              <li><a href="">বাংলাদেশের রাজনৈতিক</a></li>
+              <li><a href="">ব্যবসা ও অর্থনীতি</a></li>
+              <li><a href="">ইতিহাস</a></li>
+            </ul>
+          </div>
+          <div>
+            <span class="text-[1.8rem] font-[550]">নীতিমালা</span>
+            <ul class="flex flex-col text-[1.3rem] pt-[1rem] gap-[1rem]">
+              <li>
+                <a href=""> পরিষেবার শর্তাবলী</a>
+              </li>
+              <li>
+                <a href=""> ফেরত নীতিমালা</a>
+              </li>
+              <li>
+                <a href=""> গোপনীয়তা নীতিমালা </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <span class="text-[1.8rem] font-[550]">তথ্য</span>
+            <ul class="flex flex-col text-[1.3rem] pt-[1rem] gap-[1rem]">
+              <li>
+                <a href=""> আমাদের সম্পর্কে </a>
+              </li>
+              <li>
+                <a href=""> যোগাযোগ করুন</a>
+              </li>
+              <li>
+                <a href=""> অর্ডার ট্র্যাকিং</a>
+              </li>
+            </ul>
+          </div>
+          <div class="max-[500px]:col-span-2">
+            <span class="text-[1.8rem] font-[550]">যোগাযোগ</span>
+            <ul class="flex flex-col text-[1.5rem] pt-[1rem] gap-[1rem]">
+              <li>
+                <a href="">+8801737114925</a>
+              </li>
+              <li>
+                <a href="">kamrujjamanshimu@gmail.com</a>
+              </li>
+              <li>
+                <a href="">Dharirampur, Trishal, Mymensingh</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="text-center bg-[#86bc42] py-[2rem] text-white text-[1.4rem]">
+        <span>@2025 Boiadda.com -বই আড্ডা সমস্ত অধিকার সংরক্ষিত</span>
+      </div>
+    </footer>
+    <!-- ========== End Footer Section ========== -->
+  </body>
+</html>

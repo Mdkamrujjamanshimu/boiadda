@@ -1,0 +1,24 @@
+<div class="">
+                <div class="relative">
+                  <img
+                    src="https://bponi.sgp1.cdn.digitaloceanspaces.com/bponi/store/ba623c21-2cac-473a-8865-df223eaba787.png"
+                    alt=""
+                    class="rounded-[.5rem]"
+                  />
+                  <!-- <span class="absolute text-white top-0 -left-[0] bg-black">25% ছাড় </span> -->
+                </div>
+                <div class="py-[2rem] text-[1.4rem]">
+                  <div class="text-black text-center whitespace-nowrap">
+                    <span
+                      >মার্কেটিং মাস্টারি (ডিজিটাল মার্কেটিংয়ের পূর্ণাঙ্গ
+                      গাইডলাইন)</span
+                    >
+                  </div>
+                  <div
+                    class="flex justify-center gap-[2rem] font-[600] my-[3rem] text-[2rem]"
+                  >
+                    <span class="text-[#7DB13D]">৳440</span>
+                    <span class="text-[#5E605C]"><del>৳490</del></span>
+                  </div>
+                </div>
+              </div>
